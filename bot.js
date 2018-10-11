@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const Bot = new Discord.Client();
-const TOKEN = 'NDc1MjkzOTEyODYxMzc2NTEz.Dp-lWg.5RerM6sR6J8MnhZZfaJ0_00NSSk';
 const fs = require("fs");
 const prefix = "$";
 const ms = require("ms");
@@ -135,9 +134,5 @@ client.on('message', message => {
     	message.reply('BONG!');
   	}
 });
-
-// THIS  MUST  BE  THIS  WAY
-client.login(TOKEN);
-
 
 client.login(process.env.BOT_TOKEN);
